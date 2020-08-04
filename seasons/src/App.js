@@ -1,7 +1,8 @@
 import React from "react";
 import SeasonDisplay from "./SeasonDisplay";
+import Loader from "./Loader";
 class App extends React.Component {
-    state = {lat: null, errorMessage: ""};
+    state = { lat: null, errorMessage: "" };
     componentDidMount() {
         window.navigator.geolocation.getCurrentPosition(
             (pos) => {
@@ -15,7 +16,7 @@ class App extends React.Component {
     componentDidUpdate() {
         console.log("UPDATED");
     }
-    render() {
+    renderContent() {
         if (this.state.errorMessage) {
             return (
                 <div>
@@ -26,16 +27,19 @@ class App extends React.Component {
         if (this.state.lat) {
             return (
                 <div>
-                    <SeasonDisplay lat={this.state.lat}/>
+                    <SeasonDisplay lat={this.state.lat} />
                 </div>
             );
         } else {
             return (
                 <div>
-                    <h1>Loading...</h1>
+                    <Loader message="Please accept location request"/>
                 </div>
             );
         }
+    }
+    render() {
+        return (<div>{this.renderContent()}</div>);
     }
 }
 
