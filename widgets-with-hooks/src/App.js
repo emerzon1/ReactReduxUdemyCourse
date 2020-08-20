@@ -4,6 +4,7 @@ import Search from "./Components/Search";
 import DropDown from "./Components/DropDown";
 import Translate from "./Components/Translate";
 import Route from "./Components/Route";
+import Header from './Components/Header';
 const items = [
     {
         title: "What is React?",
@@ -49,6 +50,7 @@ const App = () => {
     const [selected, setSelected] = useState(options[0]);
     return (
         <div>
+            <Header />
             <Route path="/">
                 <Accordion items={items} />
             </Route>
