@@ -48,6 +48,7 @@ const Translate = () => {
                 label="Select a Language"
                 selected={language}
                 onSelectedChange={setLanguage}
+                showDiv={false}
             />
             <hr />
             <h3 className="ui header">Output: </h3>

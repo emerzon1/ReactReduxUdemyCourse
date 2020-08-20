@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const DropDown = ({ options, label, selected, onSelectedChange }) => {
+const DropDown = ({ options, label, selected, onSelectedChange, showDiv }) => {
     const [open, setOpen] = useState(false);
     const ref = useRef();
     useEffect(() => {
@@ -53,7 +53,7 @@ const DropDown = ({ options, label, selected, onSelectedChange }) => {
                     </div>
                 </div>
             </div>
-            {/*<div style={{color:selected.value}}><hr /> This text is {selected.value}!</div>*/}
+            {(showDiv ? <div style={{color:selected.value}}><hr /> This text is {selected.value}!</div> : null)}
         </div>
     );
 };
