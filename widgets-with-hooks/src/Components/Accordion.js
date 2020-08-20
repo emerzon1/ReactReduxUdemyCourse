@@ -10,7 +10,7 @@ const Accordion = ({ items }) => {
         const active = (ind === index) ? "active" : ""
         return (
         <React.Fragment key={i.title}>
-            <div className={`title ${active}`}title onClick = {() => {onTitleClick(ind)}}>
+            <div className={`title ${active}`} onClick = {() => {onTitleClick(ind)}}>
                 <i className="dropdown icon"></i>
                 {i.title}
             </div>
