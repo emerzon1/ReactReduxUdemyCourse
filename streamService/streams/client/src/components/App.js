@@ -8,7 +8,7 @@ import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
 const App = () => {
     return (
-        <div>
+        <div className="ui container">
             <BrowserRouter>
                 <Header />
                 <Route path="/" exact component={StreamList} />
