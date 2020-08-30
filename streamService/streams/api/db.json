@@ -1,0 +1,22 @@
+{
+  "streams": [
+    {
+      "title": "My Stream",
+      "description": "Creation Stream",
+      "userId": "112931911204979595759",
+      "id": 1
+    },
+    {
+      "title": "hello",
+      "description": "goobly",
+      "userId": "112931911204979595759",
+      "id": 2
+    },
+    {
+      "title": "Evan's Stream",
+      "description": "My Stream",
+      "userId": "112931911204979595759",
+      "id": 3
+    }
+  ]
+}
