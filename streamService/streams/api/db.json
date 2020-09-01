@@ -1,22 +1,16 @@
 {
   "streams": [
     {
-      "title": "My Stream",
-      "description": "Creation Stream",
-      "userId": "112931911204979595759",
+      "title": "Another Stream",
+      "description": "aEvan's Stream",
+      "userId": "117524513370431932795",
       "id": 1
     },
     {
-      "title": "hello",
-      "description": "goobly",
-      "userId": "112931911204979595759",
+      "description": "Midas and the Golden Touch",
+      "title": "Great Movie",
+      "userId": "117524513370431932795",
       "id": 2
-    },
-    {
-      "title": "Evan's Stream",
-      "description": "My Stream",
-      "userId": "112931911204979595759",
-      "id": 3
     }
   ]
 }
