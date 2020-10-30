@@ -10,6 +10,7 @@ const SongDetail = (props) => {
             <h3>Details for:</h3>
             <p>Title: {props.selected.title}</p>
             <p>Duration: {props.selected.duration}</p>
+            
         </div>
     );
 }
